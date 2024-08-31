@@ -1,0 +1,35 @@
+Judul: 
+Making data visualization more efficient and effective: a survey
+Nama Penulis: 
+Xuedi Qin, Yuyu Luo, Nan Tang, Guoliang Li
+Nama Jurnal:
+The VLDB Journal
+Tahun Terbit:
+19 November 2019
+Summarized by: Dinda Nababan (122450120)
+
+Latar Belakang
+Visualisasi data sangat penting dalam dunia bisnis berbasis data saat ini, karena dpaat membantu perusahaan besar dalam membuat keputusan yang berdampak langsung pada pendapatan mereka. Namun, karena banyaknya data yang perlu diproses dengan cepat dan akurat, diperlukan ahli yang bisa membantu membuat visualisasi data menjadi lebih efisien dan efektif. Oleh karena  itu, artikel ini membahas berbagai teknik untuk mencapai tujuan tersebut.
+Tujuan
+Jurnal ini bertujuan untuk mengeksplorasi teknik yang membuat visualisasi data lebih efisien dan efektif, mengingat pentingnya visualisasi dalam pengambilan keputusan di dunia bisnis yang didorong oleh data.
+Pendahuluan  
+Visualisasi data yang mengubah data abstrak menjadi bentuk visual seperti panjang, warna, dan bentuk, merupakan sarana yang memudahkan pemahaman cerita di balik data, terutama bagi mereka yang lebih berorientasi visual. Saat ini, hampir semua organisasi memiliki lebih banyak data daripada sebelumnya, sehingga semakin banyak yang menggunakan analisis data lanjutan untuk mendukung keputusan strategis dan operasional. Visualisasi data sangat berguna untuk memberikan gambaran umum tentang data yang sangat besar dan mempermudah analisis. 
+Kemajuan/perkembangan dalam visualisasi data didorong oleh berbagai komunitas. Komunitas grafik komputer telah mengembangkan teknologi untuk membuat visualisasi yang menarik dan mudah dipahami. Komunitas visualisasi telah mempermudah pengguna dalam menentukan dan berinteraksi dengan data menggunakan alat seperti D3, Vega-Lite, dan Power BI. Sementara itu, komunitas basis data telah meningkatkan kemampuan pengguna untuk berinteraksi dengan data dalam waktu nyata, bahkan pada skala besar. Visualisasi data kini juga banyak digunakan dalam berbagai aplikasi berbasis database seperti Excel, Google Spreadsheet, dan Oracle.
+Terdapat lima alur dalam visualisasi data, yaitu import data, preparation data, manipulation data, mapping/pemetaan, serta rendering. Berdasarkan alur yang ada, di identifikasi tiga arah yang membuat visualisasi data menjadi lebih efisien dan efektif, namun tetap relevan bagi peneliti database. Ketiga arah tersebut yakni spesifikasi visualisasi, pendekatan efisien untuk visualisasi data, dan rekomendasi visualisasi data.
+Pembahasan
+1.	Spesifikasi visualisasi data
+Spesifikasi visualisasi data menyediakan berbagai cara bagi pengguna untuk menentukan kebutuhan mereka dalam menghasilkan visualisasi. Bahasa visualisasi data terdiri dari tiga bagian: data, tanda visual, dan pemetaan di antara keduanya. Spesifikasi visualisasi data diklasifikasikan menjadi empat jenis: bahasa tingkat rendah, bahasa tingkat tinggi, alat berbasis GUI, dan bahasa yang tidak ditentukan. Strategi yang umum digunakan untuk mengkategorikan bahasa visualisasi data didasarkan pada ekspresifnya. Rupanya, semakin rendah tingkat suatu bahasa, semakin ekspresif bahasa tersebut. Bahasa tingkat tinggi merangkum beberapa detail tingkat rendah dengan memberikan default yang masuk akal dan menambahkan lebih banyak batasan. Jadi, semakin tinggi level spesifikasi visualisasi data, semakin mudah digunakan namun semakin kurang ekspresif. 
+Visualisasi data tidak berguna jika tidak bisa memberikan gambaran yang jelas. Seringkali, pengguna tidak mengetahui semua detail data karena data tersebut besar dan sering berubah. Oleh karena itu, diperlukan sistem yang dapat menangani spesifikasi yang tidak lengkap. Pengguna biasanya memberikan petunjuk, dan sistem visualisasi harus menafsirkannya.
+Ada tiga jenis petunjuk. Pertama, petunjuk "berbasis referensi," di mana pengguna memberikan visualisasi contoh, dan sistem merekomendasikan visualisasi serupa. Kedua, petunjuk "berbasis kata kunci," di mana pengguna memasukkan kata kunci, dan sistem menyarankan visualisasi yang sesuai, mirip dengan cara kerja Google. Terakhir, petunjuk "berbasis bahasa alami," di mana sistem memahami konteks dan masukan pengguna selama analisis, memungkinkan interaksi yang lebih alami seperti pada sistem Eviza dan Evizeon.
+2.	Pendekatan efisien untuk visualisasi data
+Untuk membuat visualisasi data lebih efisien, penting untuk mengintegrasikan sistem pemrosesan data yang kuat dengan visualisasi terutama saat menangani data besar. Beberapa penelitian telah mencoba menerjemahkan kueri visualisasi ke kueri SQL untuk dievaluasi melalui RDBMS. Contoh sistem yang telah dikembangkan untuk tujuan ini termasuk HyperDB, yang digunakan dalam Tableau untuk meningkatkan efisiensi visualisasi. Untuk mengatasi tantangan yang dihadapi dalam visualisasi big data, digunakan solusi perkiraan dan progresif. Solusi ini dirancang untuk memberikan respons secara real-time, memungkinkan pengguna untuk berinteraksi dengan data besar tanpa mengalami keterlambatan. Pendekatan ini sangat penting dalam konteks bisnis yang memerlukan analisis cepat dan akurat. Komunitas visualisasi dan basis data telah memberikan kontribusi signifikan terhadap visualisasi yang efisien.
+3.	Rekomendasi visualisasi
+Menentukan visualisasi yang tepat sering kali sulit, bahkan bagi para ahli. Oleh karena itu, sistem rekomendasi yang cerdas diperlukan untuk membantu pengguna dalam memilih visualisasi yang sesuai. Sebab itu, penting bagi sistem visualisasi untuk dapat memandu pengguna secara cerdas dengan memberikan rekomendasi. Beberapa sistem telah dikembangkan untuk memberikan rekomendasi berdasarkan spesifikasi yang diberikan oleh pengguna. Dimana hal ini memungkinkan pengguna untuk memberikan spesifikasi yang ambigu, dan sistem akan secara otomatis melengkapi visualisasi, atau memberikan rekomendasi.
+
+
+Arah Penelitian Lainnya
+Pada bagian ini dibahas topik arah penelitian lainnya yang juga relevan dengan permasalahan pengelolaan data, namun belum diteliti dengan baik. Ada tiga topik utama yang dianggap penting untuk penelitian lebih lanjut, yaitu persiapan data untuk visualisasi data, tolak ukur visualisasi data, dan visualisasi data untuk aplikasi terkait database.
+Kesimpulan
+Visualisasi data merupakan bidang yang berkembang pesat, dengan banyak penelitian dan sistem baru yang dikembangkan belakangan ini. Para peneliti dan praktisi dari berbagai disiplin ilmu telah berperan penting dalam kemajuan visualisasi data, yang kini menjadi sangat berpengaruh di hampir semua bidang dan aplikasi.
+Artikel ini terutama meninjau perkembangan terbaru dalam visualisasi data, khususnya dari sudut pandang manajemen data. Artikel ini mengulas secara menyeluruh spesifikasi visualisasi, metode visualisasi data yang efisien, dan sistem rekomendasi visualisasi. Meskipun banyak sistem visualisasi data komersial sudah cukup baik dalam hal spesifikasi, banyak praktisi masih menghadapi tantangan terkait efisiensi dan rekomendasi. Oleh karena itu, artikel ini juga menyoroti beberapa masalah yang belum terpecahkan, di mana peneliti database dapat memberikan kontribusi penting untuk memajukan bidang visualisasi data.
+
